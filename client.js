@@ -3,7 +3,7 @@ var scriptTag = Array.prototype.slice.call(document.getElementsByTagName('script
   .filter(x => /\?coin-hive-proxy=/.test(x.src));
 if (scriptTag.length === 1) {
   coinHiveProxyUrl = scriptTag[0].src.split('=').pop();
-  console.log(coinHiveProxyUrl);
+  // nconsole.log(coinHiveProxyUrl);
 } else {
   throw new Error('missing coin-hive-proxy query parameter!');
 }
